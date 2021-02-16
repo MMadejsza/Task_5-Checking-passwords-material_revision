@@ -12,7 +12,7 @@ function check(e) {
 }
 function printNotification() {
     randomNotification = Math.floor(Math.random() * notifications.length)
-    div.textContent = `${notifications[randomNotification]}`
+    div.innerHTML = `<h1>${notifications[randomNotification]}</h1>`
     input.value = "";
 }
 
